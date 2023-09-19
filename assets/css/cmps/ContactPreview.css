@@ -1,0 +1,10 @@
+.contact-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-preview:nth-child(odd) {
+    background-color: rgb(205, 236, 246);
+}
