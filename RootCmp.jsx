@@ -15,7 +15,7 @@ export function App() {
                 <section className="app">
                     <AppHeader />
                     <Routes>
-                        <Route path="/contact/:contactId" element={<ContactDetails />} />
+                        <Route path="/" element={<Home />} />
                     </Routes>
                 </section>
             </Router>
