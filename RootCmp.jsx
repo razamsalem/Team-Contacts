@@ -4,6 +4,7 @@ const { Provider } = ReactRedux
 
 import { AppHeader } from './cmps/AppHeader.jsx'
 import { store } from './store/store.js'
+import { ContactIndex } from './views/ContactIndex.jsx'
 import { ContactDetails } from './views/ContactDetails.jsx'
 import { Home } from './views/Home.jsx'
 
@@ -15,7 +16,9 @@ export function App() {
                 <section className="app">
                     <AppHeader />
                     <Routes>
+                        <Route path="/" element={<ContactIndex />} />
                         <Route path="/contact/:contactId" element={<ContactDetails />} />
+
                     </Routes>
                 </section>
             </Router>
