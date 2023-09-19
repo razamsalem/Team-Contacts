@@ -1,0 +1,25 @@
+.add-btn {
+    width: 2.2rem;
+    height: 2.2rem;
+    position: fixed;
+    bottom: 0.3em;
+    right: 0.3em;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    color: whitesmoke;
+    box-shadow: 2px 2px 10px lightgray;
+    transition: 0.4s;
+
+}
+
+.add-btn:hover {
+    color: lightskyblue;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 10px lightblue;
+}
