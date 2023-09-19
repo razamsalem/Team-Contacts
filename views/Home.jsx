@@ -5,15 +5,15 @@ const { useEffect } = React
 const { useSelector } = ReactRedux
 
 export function Home() {
-    const contacts = useSelector(storeState => storeState.contactModule.contacts)
+    // const contacts = useSelector(storeState => storeState.contactModule.contacts)
 
-    useEffect(() => {
-        loadContacts()
+    // useEffect(() => {
+    //     loadContacts()
 
-            .catch(err => {
-                console.log(err)
-            })
-    }, [])
+    //         .catch(err => {
+    //             console.log(err)
+    //         })
+    // }, [])
 
 
     return <section className="home">

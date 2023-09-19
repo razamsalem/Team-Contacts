@@ -28,6 +28,7 @@ export function ContactIndex() {
         <section className="contact-index">
             {/* <ContactList contacts={contacts} /> */}
             <h1>Contact Index</h1>
+            {JSON.stringify(contacts)}
         </section>
     )
 }
