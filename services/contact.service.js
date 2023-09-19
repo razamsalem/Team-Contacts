@@ -1,6 +1,6 @@
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
-// import demoData from './demoData.js'
+import demoData from './demo-data.service.js'
 
 const STORAGE_KEY = 'contactsDB'
 
@@ -9,7 +9,7 @@ export const todoService = {
     getById,
     save,
     remove,
-    getEmptyTodo,
+    getEmptyContact,
 }
 
 _createContacts()
