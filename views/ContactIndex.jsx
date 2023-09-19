@@ -1,9 +1,10 @@
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
 import { addContact, loadContacts, removeContact } from "../store/actions/contact.action.js"
-import { EditAddContact } from '../cmps/EditAddContact.jsx'
+import { ContactEditAdd } from '../cmps/ContactEditAdd.jsx'
 import { ContactList } from './ContactList.jsx'
 const { useEffect } = React
 const { useSelector } = ReactRedux
+const { useParams, useNavigate, Link } = ReactRouterDOM
 
 export function ContactIndex() {
     const contacts = useSelector(storeState => storeState.contactModule.contacts)
@@ -31,7 +32,7 @@ export function ContactIndex() {
             <ContactList contacts={contacts} />
             {/* <h1>Contact Index</h1> */}
             {/* {JSON.stringify(contacts)} */}
-            <EditAddContact />
+            <Link to="/contact/edit" className='add-btn'>+</Link>
         </section>
     )
 }

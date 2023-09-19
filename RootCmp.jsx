@@ -6,6 +6,7 @@ import { AppHeader } from './cmps/AppHeader.jsx'
 import { store } from './store/store.js'
 import { ContactIndex } from './views/ContactIndex.jsx'
 import { ContactDetails } from './views/ContactDetails.jsx'
+import { ContactEditAdd } from './cmps/ContactEditAdd.jsx'
 import { Home } from './views/Home.jsx'
 
 export function App() {
@@ -17,6 +18,7 @@ export function App() {
                     <AppHeader />
                     <Routes>
                         <Route path="/" element={<ContactIndex />} />
+                        <Route path="/contact/edit" element={<ContactEditAdd />} />
                         <Route path="/contact/:contactId" element={<ContactDetails />} />
                     </Routes>
                 </section>

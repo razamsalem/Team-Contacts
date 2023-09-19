@@ -1,13 +1,15 @@
 import { addContact } from "../store/actions/contact.action.js"
 const { useState } = React
-
-export function EditAddContact() {
+const { useNavigate, Link } = ReactRouterDOM
+export function ContactEditAdd() {
 
     const [contactToEdit, editContact] = useState({})
+    const navigate = useNavigate()
 
     function saveContact(ev) {
         ev.preventDefault()
         addContact(contactToEdit)
+            .then(() => { navigate('/') })
     }
 
     function handleChange({ target }) {
@@ -52,8 +54,9 @@ export function EditAddContact() {
                     DESC:
                     <input type="text" name="desc" />
                 </label>
-                <button>Add</button>
+                <button>Save</button>
             </form>
+            <Link to="/" className="back-btn">Back</Link>
         </section>
     )
 }
