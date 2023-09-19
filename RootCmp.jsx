@@ -4,19 +4,21 @@ const { Provider } = ReactRedux
 
 import { AppHeader } from './cmps/AppHeader.jsx'
 import { store } from './store/store.js'
+import { ContactDetails } from './views/ContactDetails.jsx'
 import { Home } from './views/Home.jsx'
 
 export function App() {
+
     return (
         <Provider store={store}>
-        <Router>
-            <section className="app">
-                <AppHeader />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                </Routes>
-            </section>
-        </Router>
+            <Router>
+                <section className="app">
+                    <AppHeader />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                    </Routes>
+                </section>
+            </Router>
         </Provider>
     )
 }

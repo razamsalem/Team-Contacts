@@ -5,7 +5,7 @@ const demoData = [
         lastName: 'Wyatt',
         email: 'claraw@gmail.com',
         phone: '563-554-1703',
-        desc: 'Living in usa'
+        desc: '22, Web Developer'
     },
     {
         _id: 't101',
@@ -13,7 +13,7 @@ const demoData = [
         lastName: ' Carr',
         email: 'virginia@gmail.com',
         phone: '503-554-1783',
-        desc: 'virgina live in virgina usa'
+        desc: '42, Manager Director'
     },
     {
         _id: 't102',
@@ -21,7 +21,7 @@ const demoData = [
         lastName: 'Berlin',
         email: 'ofir1245@gmail.com',
         phone: '0806064116',
-        desc: 'work at Tel aviv'
+        desc: '27, backend developer'
     },
     {
         _id: 't103',
@@ -29,7 +29,7 @@ const demoData = [
         lastName: 'heler',
         email: 'Celine@gmail.com',
         phone: '055-5469571',
-        desc: 'celine love to go to pubs at nights'
+        desc: 'VP R&D'
     },
 
 ]

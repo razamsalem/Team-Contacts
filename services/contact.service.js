@@ -17,13 +17,13 @@ _createContacts()
 function query(filterBy = { name: '' }) {
     // return axios.get(BASE_URL).then(res => res.data)
     return storageService.query(STORAGE_KEY)
-        .then(todos => {
+        .then(contacts => {
             //     if (filterBy.txt)
-            //         todos = todos.filter(t => t.title.toLowerCase().includes(filterBy.txt.toLowerCase()))
-            //     if (filterBy.status === 'done') return todos.filter(t => t.isDone)
-            //     else if (filterBy.status === 'active') return todos.filter(t => !t.isDone)
+            //         contacts = contacts.filter(t => t.title.toLowerCase().includes(filterBy.txt.toLowerCase()))
+            //     if (filterBy.status === 'done') return contacts.filter(t => t.isDone)
+            //     else if (filterBy.status === 'active') return contacts.filter(t => !t.isDone)
 
-            return todos
+            return contacts
         }
     )
 }
