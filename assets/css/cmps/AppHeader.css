@@ -1,13 +1,12 @@
 header {
-
-    background: lightcyan;
+    background: #357de9;
     border-bottom: 2px solid white;
 }
 
 .app-header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 30px 15px;
 }
 
 nav a {
@@ -19,7 +18,10 @@ nav a:active {
 }
 
 nav a.active {
-    color: darkblue;
+    color: #072a4f;
     font-weight: bold;
-    text-decoration: overline;
+}
+
+h3 {
+    color: #072a4f;
 }
