@@ -1,0 +1,16 @@
+.edit-add-contact {
+    text-align: center;
+}
+
+.edit-add-contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.edit-add-contact label {
+    display: flex;
+    flex-direction: column;
+}
