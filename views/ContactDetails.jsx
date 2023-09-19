@@ -27,11 +27,24 @@ export function ContactDetails() {
     if (!contact) return <div>Loading...</div>
     return (
         <section className="contact-details">
-            <h1>Name: {contact.firstName + ' ' + contact.lastName}</h1>
-            <h3>Email: {contact.email}</h3>
-            <h3>Phone: {contact.phone}</h3>
-            <p><span className="bold">About me:</span> {contact.desc}</p>
-            <Link to="/contact">Back</Link>
+            <div className="contact-bio">
+            <div className="info">
+                <h1>Name: {contact.firstName + ' ' + contact.lastName}</h1>
+                <h3>Email: {contact.email}</h3>
+                <h3>Phone: {contact.phone}</h3>
+                <p><span className="bold">About me:</span> {contact.desc}</p>
+            </div>
+
+            <div className="contact-image">
+                <img src="../../assets/img/user.png" alt="Contact" />
+            </div>
+            </div>
+
+            <div className="btns">
+                <Link to="/contact">Back</Link>
+                <Link to={`/contact/remove/${contact._id}`}>Remove contact</Link>
+                <Link to={`/contact/edit/${contact._id}`}>Edit contact</Link>
+            </div>
         </section>
     )
 }

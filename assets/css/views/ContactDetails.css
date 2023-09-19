@@ -1,0 +1,40 @@
+.contact-bio {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.info {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info>* {
+    margin-block: 12px;
+}
+
+.info:first-child {
+    margin-block-start: 20px;
+}
+
+.contact-image {
+    flex: 1;
+}
+
+.contact-image img {
+    max-width: 100%;
+}
+
+.btns:first-child {
+    padding-left: 20px;
+}
+
+.btns > * {
+    padding-left: 20px;
+}
+
+.btns > *:hover {
+    color: #1d1dc8;
+}
