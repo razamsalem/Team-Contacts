@@ -21,3 +21,7 @@
 .grid {
     display: grid;
 }
+
+.bold {
+    font-weight: 600;
+}
