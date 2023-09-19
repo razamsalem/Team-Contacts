@@ -4,7 +4,7 @@ import demoData from './demo-data.service.js'
 
 const STORAGE_KEY = 'contactsDB'
 
-export const todoService = {
+export const contactService = {
     query,
     getById,
     save,
@@ -17,14 +17,15 @@ _createContacts()
 function query(filterBy = { name: '' }) {
     // return axios.get(BASE_URL).then(res => res.data)
     return storageService.query(STORAGE_KEY)
-    // .then((todos) => {
-    //     if (filterBy.txt)
-    //         todos = todos.filter(t => t.title.toLowerCase().includes(filterBy.txt.toLowerCase()))
-    //     if (filterBy.status === 'done') return todos.filter(t => t.isDone)
-    //     else if (filterBy.status === 'active') return todos.filter(t => !t.isDone)
+        .then(todos => {
+            //     if (filterBy.txt)
+            //         todos = todos.filter(t => t.title.toLowerCase().includes(filterBy.txt.toLowerCase()))
+            //     if (filterBy.status === 'done') return todos.filter(t => t.isDone)
+            //     else if (filterBy.status === 'active') return todos.filter(t => !t.isDone)
 
-    //     else return todos
-    // })
+            return todos
+        }
+    )
 }
 function getById(contactId) {
     return storageService.get(STORAGE_KEY, contactId)
