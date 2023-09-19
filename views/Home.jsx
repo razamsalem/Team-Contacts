@@ -1,4 +1,5 @@
 import { loadContacts } from '../store/actions/contact.action.js'
+import { ContactIndex } from './ContactIndex.jsx'
 
 const { useEffect } = React
 const { useSelector } = ReactRedux
@@ -12,11 +13,10 @@ export function Home() {
             .catch(err => {
                 console.log(err)
             })
-        console.log('sup')
     }, [])
 
 
     return <section className="home">
-        <h1>Welcome to home page!</h1>
+        <ContactIndex />
     </section>
 }
