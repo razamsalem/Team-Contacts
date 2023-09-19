@@ -1,5 +1,6 @@
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
 import { addContact, loadContacts, removeContact } from "../store/actions/contact.action.js"
+import { ContactList } from './ContactList.jsx'
 const { useEffect } = React
 const { useSelector } = ReactRedux
 
@@ -26,9 +27,9 @@ export function ContactIndex() {
 
     return (
         <section className="contact-index">
-            {/* <ContactList contacts={contacts} /> */}
-            <h1>Contact Index</h1>
-            {JSON.stringify(contacts)}
+            <ContactList contacts={contacts} />
+            {/* <h1>Contact Index</h1> */}
+            {/* {JSON.stringify(contacts)} */}
         </section>
     )
 }
