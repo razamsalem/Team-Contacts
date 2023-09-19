@@ -1,5 +1,6 @@
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
 import { addContact, loadContacts, removeContact } from "../store/actions/contact.action.js"
+import { EditAddContact } from '../cmps/EditAddContact.jsx'
 import { ContactList } from './ContactList.jsx'
 const { useEffect } = React
 const { useSelector } = ReactRedux
@@ -30,6 +31,7 @@ export function ContactIndex() {
             <ContactList contacts={contacts} />
             {/* <h1>Contact Index</h1> */}
             {/* {JSON.stringify(contacts)} */}
+            <EditAddContact />
         </section>
     )
 }
