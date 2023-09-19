@@ -9,7 +9,7 @@ export const todoService = {
     getById,
     save,
     remove,
-    // getEmptyTodo,
+    getEmptyTodo,
 }
 
 _createContacts()
